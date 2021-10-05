@@ -1,26 +1,37 @@
 from factory.BasicCalculatorFactory import BasicCalculatorFactory
 from factory.AdvancedCalculatorFactory import AdvancedCalculatorFactory
-
-
-def turns_string_number_to_float(string_number):
-    if string_number not in ('-', '+', '*', '/', '**', '//'):
-        return float(string_number)
-    return string_number
+from shapes.Circle import Circle
+from shapes.Rectangle import Rectangle
+from shapes.Triangle import Triangle
 
 
 if __name__ == "__main__":
-    expression = input("Digite uma expressão básica: ")
-    expression = expression.split()
-    expression = list(map(turns_string_number_to_float, expression))
+    # expression = input("Digite uma expressão básica: ")
     
-    basic_cal = BasicCalculatorFactory(expression)
-    basic_cal.calculate()
-    basic_cal.show_result()
+    # basic_cal = BasicCalculatorFactory(expression)
+    # basic_cal.calculate()
+    # basic_cal.show_result()
 
-    expression = input("\n\nDigite uma expressão avançada: ")
-    expression = expression.split()
-    expression = list(map(turns_string_number_to_float, expression))
+    # expression = input("\n\nDigite uma expressão avançada: ")
 
-    advanced_cal = AdvancedCalculatorFactory(expression)
-    advanced_cal.calculate()
-    advanced_cal.show_result()
+    # advanced_cal = AdvancedCalculatorFactory(expression)
+    # advanced_cal.calculate()
+    # advanced_cal.show_result()
+
+
+    circle = Circle('5')
+    circle.area()
+    circle.perimeter()
+    circle.show_metrics()
+
+
+    rectangle = Rectangle('2', '8')
+    rectangle.area()
+    rectangle.perimeter()
+    rectangle.show_metrics()
+
+
+    triangle = Triangle('2', '8', '3', '3')
+    triangle.area()
+    triangle.perimeter()
+    triangle.show_metrics()

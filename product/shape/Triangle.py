@@ -1,6 +1,6 @@
-from shapes.Shape import Shape
-from factory.AdvancedCalculatorFactory import AdvancedCalculatorFactory
-from factory.BasicCalculatorFactory import BasicCalculatorFactory
+from product.shape.Shape import Shape
+from factory.calculator.AdvancedCalculatorFactory import AdvancedCalculatorFactory
+from factory.calculator.BasicCalculatorFactory import BasicCalculatorFactory
 
 
 class Triangle(Shape):

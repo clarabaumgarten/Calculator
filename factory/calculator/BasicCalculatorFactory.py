@@ -1,5 +1,5 @@
-from calculators.BasicCalculator import BasicCalculator
-from factory.Factory import Factory
+from product.calculator.BasicCalculator import BasicCalculator
+from factory.calculator.Factory import Factory
 
 
 class BasicCalculatorFactory(Factory):

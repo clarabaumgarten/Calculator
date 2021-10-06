@@ -1,4 +1,4 @@
-from calculators.Caculator import Calculator
+from product.calculator.Caculator import Calculator
 
 
 class BasicCalculator(Calculator):

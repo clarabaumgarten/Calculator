@@ -12,4 +12,4 @@ class Shape(ABC):
     
     def show_metrics(self):
         print("Perímetro: ", self._perimeter)
-        print("Área: ", self._area)
+        print("Área: ", self._area, '\n')

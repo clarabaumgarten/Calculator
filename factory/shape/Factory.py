@@ -11,3 +11,13 @@ class Factory(ABC):
         obj.area()
         obj.perimeter()
         obj.show_metrics()
+
+    def area(self):
+        obj = self.factory_method()
+        obj.area()
+        return obj.get_area()
+
+    def perimeter(self):
+        obj = self.factory_method()
+        obj.perimeter()
+        return obj.get_perimeter()

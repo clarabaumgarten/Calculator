@@ -1,5 +1,4 @@
 from product.shape.Shape import Shape
-from factory.calculator.AdvancedCalculatorFactory import AdvancedCalculatorFactory
 from factory.calculator.BasicCalculatorFactory import BasicCalculatorFactory
 
 
